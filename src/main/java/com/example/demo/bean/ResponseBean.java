@@ -22,4 +22,6 @@ public class ResponseBean<T> {
      *
      */
     private T datas;
+
+    private String jwtToken;
 }

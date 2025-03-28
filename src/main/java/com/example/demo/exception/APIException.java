@@ -1,15 +1,15 @@
 package com.example.demo.exception;
 
-import com.example.demo.util.ErrorCode;
+import com.example.demo.enums.Code;
 import lombok.Data;
 
 @Data
 public final class APIException extends Exception{
 
-    private ErrorCode errorCode;
+    private Code errorCode;
     private String message;
 
-    public APIException(ErrorCode errorCode , String message) {
+    public APIException(Code errorCode , String message) {
         super(message);
         this.errorCode = errorCode;
         this.message = message;
