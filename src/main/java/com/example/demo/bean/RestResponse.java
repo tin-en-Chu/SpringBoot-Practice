@@ -1,25 +1,17 @@
 package com.example.demo.bean;
 
+import com.example.demo.util.ErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseBean<T> {
+@Builder
+public class RestResponse {
 
-    /**
-     *
-     */
-    private String statusCode;
-
-    /**
-     *
-     */
-    private T datas;
+    private ErrorCode errorCode;
+    private String message;
 }

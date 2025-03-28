@@ -13,12 +13,10 @@ import java.util.List;
 @RequestMapping(value = "/api")
 public class ResponseController {
 
-    @PostMapping(value = "Test" , consumes = "application/json" , produces = "application/json")
-    @ExceptionHandler
-    public ResponseBean<ResponseDTO> test(@RequestBody List<ResponseDTO> res) {
-
-        List<ResponseDTO> data = res;
-
-        return ResponseBean.<ResponseDTO>builder().statusCode("200").build();
-    }
+//    @PostMapping(value = "Test" , consumes = "application/json" , produces = "application/json")
+//    @ExceptionHandler
+//    public ResponseBean<ResponseDTO> test(@RequestBody List<ResponseDTO> res) {
+//
+//        return ResponseBean.<ResponseDTO>builder().statusCode("200").datas(res).build();
+//    }
 }
